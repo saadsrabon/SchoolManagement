@@ -1,0 +1,11 @@
+/* This file contains the Netlify redirect rules. */
+
+# Redirect all requests to the index.html file
+/* Redirect all requests to the index.html file for single-page application routing */
+/* This allows the frontend router to handle the routing */
+/* Ensure that this is the last rule in the file */
+/* Redirect all paths to the index.html */
+*    /index.html   200
+
+# Example of a specific redirect
+# /old-path    /new-path    301
