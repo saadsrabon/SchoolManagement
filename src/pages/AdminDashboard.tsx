@@ -9,6 +9,12 @@ import { Users, GraduationCap, BookOpen, DollarSign, Calendar as CalendarIcon, T
 import DashboardLayout from '@/components/layout/DashboardLayout';
 
 const AdminDashboard = () => {
+
+  useEffect(() => {
+    // to scroll from start for the first time
+    window.scrollTo(0, 0);
+  }, []);
+
   const [stats, setStats] = useState({
     totalStudents: 2847,
     totalTeachers: 156,

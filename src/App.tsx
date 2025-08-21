@@ -30,6 +30,8 @@ import FeePage from "./pages/parent/FeePage";
 import ResultsPage from "./pages/parent/ResultsPage";
 import NotFound from "./pages/NotFound";
 import TeacherStudentFeesPage from "./pages/teacher/StudentFeesPage";
+import VideoChatPage from "./pages/admin/VideoChatPage";
+import VideoChat from "./components/video/VideoChat";
 
 const queryClient = new QueryClient();
 
@@ -60,6 +62,7 @@ const App = () => (
           <Route path="/dashboard/admin/exams" element={<ExamPage />} />
           <Route path="/dashboard/admin/routine" element={<RoutinePage />} />
           <Route path="/dashboard/admin/leave-requests" element={<LeaveRequestPage />} />
+          <Route path="/dashboard/admin/video-chat" element={<VideoChat />} />
           
           {/* Teacher Routes */}
           <Route path="/dashboard/teacher/classes" element={<MyClassesPage />} />

@@ -26,7 +26,8 @@ import {
   FileText,
   CalendarDays,
   UserX,
-  Book
+  Book,
+  Video
 } from 'lucide-react';
 
 interface AppSidebarProps {
@@ -42,6 +43,7 @@ const AppSidebar = ({ role }: AppSidebarProps) => {
   const adminMenuItems = [
     { title: "Dashboard", url: "/dashboard/admin", icon: Home },
     { title: "Chat", url: "/chat", icon: MessageSquare },
+    { title: "Video Chat", url: "/dashboard/admin/video-chat", icon: Video },
     { title: "Students", url: "/dashboard/admin/students", icon: Users },
     { title: "Teachers", url: "/dashboard/admin/teachers", icon: GraduationCap },
     { title: "Classes", url: "/dashboard/admin/classes", icon: BookOpen },
